@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            background-color: rgb(255, 255, 255);
+            background-image: url("https://lh3.googleusercontent.com/5muH074SqnjBE5Cky-6MnJNjvin7bqrl2qptjYo_E79jhznHyHW-un7v6nqYRtmCkHSDQXcob2ZBpuDTzpZIsilKVN42TFMuFuqRTFUvn9YX77kC7_0bFPEVN_OPOMZwRoiHFlmjBP0WZTiFE3ZIiHzg5UaqV6HS79-BdJdqzrx1jz6GSyJNkx_V_lIil-sHC7U1xXI9zDrzVD6d4vRPvIECBxR_mbqIJUvmGwqrsnmaNidctPkKxbvvTX3bxQduUwka4oCx7j46Gb_9QXfeo7h5ejatTQRM6go86vlbbus9ysLBzQqjkwnmHrKZ8tLqovNjgF6CX0qujnejP9XIzncq2MDbbOoI_52dhHQzICBp11GcS-YKsAgNs6FQHK29I9lxCxZVcSFjiX5jzKkDD49IyS6jbwquH0Zb8hjEQMSl0VRnZtcqyQ6grOzfCH8O-LvlbWaI4SgWqSSZ0Ya0LMjhVO5txK_7bkQ1exye0Ta8KTDd8m6QbHIskw6Y3zIS8epKKOlX_0NzkJq9O_SfocJvy5WkY8Z2VJnr5mnny9OyxS7W7NX2UO-exQJUjAxeC11pBWhjT6VzHws-jlubqqYK8ODfgShtDfSGJMqczZdELYznDBDsGlu4I4nTE00AHh5N3q1hEfX7AuXU3pcAmuoLyt5_yqv54Xg2FrjGaFDyVqPjogoZzHbFpxrNTP5bxeXnwzFMpqY8xAPYGXfTlgG_QmOLDD69NO54ueHQ2Q8D9H2ZyOhUfGCacZOKUTPDxVauGGn4BP3BOKgEJq6wxhT_1Ku-R-UUGF9mJmxPICfSun0TYpLWC6tIR0Swpq8cl9jtVbjEAl5O4oSGPwFht0jBX6GepIJtyYEtep8_jA-pn_IUBoA4gcfIOEkwYrStgJxg_TsHe-5dGhqnl0rV7UALuUuK-3iytITGw-XnB3FLDlVWf0OywQeChwByudAUlv37wg0gyHxPMiM1YtuQY62ZdL4kWUQcDli0daf4vmLcctnBezACWg=w696-h546-no?authuser=0");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+
+        }
+
+        .img {
+            padding-left: 50px;
+            max-width: 100%;
+            background-size: cover;
+
+        }
+
+        .hii {
+            background-color: aliceblue;
+        }
+
+        .hii button {
+
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .hii button:before {
+            content: "";
+            background: linear-gradient(45deg,
+                    #ff0000,
+                    #ff7300,
+                    #fffb00,
+                    #48ff00,
+                    #00ffd5,
+                    #002bff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-hii-button {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .hii button:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+            margin: top 20px;
+            padding-right: 20PX;
+        }
+
+        .text {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 20px 40px;
+            text-align: center
+        }
+
+        .text h1 {
+            color: rgb(0, 0, 0);
+            padding: 30px;
+            font-weight: bold;
+            font-size: 70px;
+            grid-column: 1/-1;
+            text-align: center;
+            font-family: "Cursive", "Lucida Handwriting", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://lh3.googleusercontent.com/Oavw7auL6_aEBBdUNEgS-eHjg1zw5yCApRFi9c1vu1sjWBCyzBDRMGk_g6KhB9UxLFs9cUF4BylXjlVWIiWjN9pkzn24_-bUBIdMVUFiBL8utBk3CPk8We62NeN9tZuX91frngPXKUL1IERTXS5PrqNcQ8NGR0Zt8dEzZ7T19tP964Yf7ixsF4_j_07LC8zuPX6-J8o8h7iOpsK7tcq4Na_rHI8FOId3gFWUaSFJYiWVVtmEmuEbcJ5hmtl7X3KFTP3ta1bXUAMz1GYv8f5Cgxp-GzHLpCdW5ZAtL0y-vPS0mpRZFij_2zS2JtL3ESY_3N2tv_VQ1N4h1pjZIvRyVTA7M-NclFL4q02SsNQtYIebogeIIMlWjhfbSQjQsJNQ9uhRJGX8Wu9vcyPTAsjXQtdV3CZbBfoitQqeIiSotylcR9nbHDX-K5ZZUYRjLopWFCzxESaIa1BuX8aaVRSmvjeTMS0dS_ndad2oNAsOJb4uoFvTclfNTnTNq_DljxjNdQ8nwx_y4CKQ3RJaEiY0qTZmNDeYIsHXrOgXOJ0pxm51CIch9yksRrEjgTMM6yFndovQTXk2ArptsyDrGMJGhHxeM0t2MtdXvN0V5uJVRfnUCdGaiN1RJHdzwDkE_vdIDaZ0AxoL3PRQn3YPlXOAWPp3qaLjYg_4xHskvyfDUoo6rbMGefiZricmg0mV7yvXnMr6-WsOhBIOv2MMdyRT_frIb1Rjw8pTfUeZuvwyvUnu_tX6YY8k6HZPpVy6oGqy1SveBBkKgppFp7FOEVGR5Z5NR274a1KxIvoFpxS6FiODF9Zs70YhyD_jADMRCKg45x8kT0MALklF9hQgf55yFQn0pyB8s9zozcELCwEnssTUe4ZR1H4KKxXv89pbpYLgsUrVrvw4n_Ulq2AlngfzWo0KsCPri0DtTwoKyD4fDxk0tuVUHZjZXci_oDubVysTpbsDI8WX9DgjsQcctKqT_YC4v-oHXJIhLJR38vHSsi_jRHBvehnBzw=w1414-h78-no?authuser=0"
+        </img>
+    <a class="hii" href="#"><button>HOME</button></a>
+
+    <a class="hii" href="{{url_for('plagerismcall')}}" target="_blank"><button>PLAGERISM</button></a>
+    <a class="hii" href="{{url_for('dndcall')}}" target="_blank"><button>DND MODE</button></a>
+    <a class="hii" href="{{url_for('vocabularycall')}}" target="_blank"><button>VOCABULARY BREAKDOWN</button></a>
+    <a class="hii" href="{{url_for('tabexit')}}" target="_blank"><button>EXAM</button></a>
+    <a class="hii" href="http://localhost/CBIT_HELP/CBIT_HELP/login.php"><button>STUDENT HELP</button></a>
+    <div class="text">
+        <h1>DIGI CAMP</h1>
+        <h1>Education Loop holes now filled !</h1>
+    </div>
+</body>
+
+</html>

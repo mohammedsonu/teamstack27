@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DND MODE</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        .img {
+            position: sticky;
+            background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+        }
+
+        .TOP {
+            padding: 0 10px 30px 10px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 20px 40px;
+        }
+
+        .heading {
+            background-color: rgb(55, 51, 51);
+            color: white;
+            margin-bottom: 30px;
+            padding: 30px 0;
+            grid-column: 1/-1;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .timer-display-id {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 20px 40px;
+
+
+        }
+
+        .timer-display-id h1 {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 90px;
+            margin-bottom: 20px;
+            padding: 20px 0;
+            grid-column: 1/-1;
+            text-align: center;
+        }
+
+        .timer-display-id p {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 75px;
+            margin-bottom: 20px;
+            padding: 20px 0;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            grid-column: 1/-1;
+        }
+
+        .timer-display-id button {
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 75px;
+            text-align: center;
+            background-color: rgb(255, 81, 0);
+            border-radius: 20px;
+            margin-left:625px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <img
+        src="https://lh3.googleusercontent.com/zJ3RTS2DauBBI-s8J_DkW_-uoy-QYPA5MbkK7V5p88KN4s82x6T4W0lVUY0OPK4HNJB8afb-E1GPZT5QdizJLf3tEd05eeqwS-uk6bMzoqsLRfnB2yQdDHdj1WNfq4V3APYxh2bdcRsqBUS2uy9eb9ISey-Jf3VCDnOmT_psH_bukhh6WFxsRlouKxPCye_zxoEBeIKeGxEZQ88vg5DZ528tS9sI3nBNP0mD6FdvkzgcvukYGOWBPyvIYyNTJwD6iNlnq8YHuEmaeuTPGW2Z-fpjdP-OoLRMD3_YDDTKArw0vNG8VrrPJTqbANxGtFU-ntOv3H8leV6n8BkLkXGKtiXng6SNW9iZszvOX3CCX6T1DbgzGfyzOQifmgHWciRByws5IFGzzJewBwcj5UYDLiOd2LcdVsytIvxZofJIqpRSe0hXwWws02rZEAeIVHxX2MlOoCRmhWF9TCvCeDrqKDTnNAK6W4lsD8kd98YwhdTYOUvjHGt_N8TjXnaSD4x4eMr53wvX8AQAxCdkbUO6Vmrsg3xGLLibNTfdg184c197UaQtYZvJO3EYFjYkDYq4roc0ZEVIAvFO1jI_zG1D2HgeqmqtqQnAEJjB9ZJvIImrHt_s3vfIU12aJsX9FuV4Lv0H1Qx5F8y9E_O3u7rdzr3aGxYSyTamXFQDe1HL9sbnr2Ht442sAnWJ0MONfjwfHXRpBniKsDc3o73yZYaKIHA-FHE4gQ-hBSVTbpeHwVzEhSUkt4O_2j2QDWU6F8q_3imTWsGm3HI2poq8o1BtvNE1cN3QBAt7eiTo6PCY8VLDe_r9FZ18r4YtDksIKpSqRVrxWDBhaFjTLwIPnlruXnMzEvvNpsoFfrG8LMCcTwS1EeScEYNLJggzjd2Eqm85SBvnX9Nb26eH8wszINksUbMCKtwBWQG2M18-Q0XTgKLLYcup51FCXlq5sD_MTdJsHl5W4uXRyZyKL5Wx6Utf8Bk6lZzL3feZs20mQWMX4AHKlz9dRtpB0Q=w1280-h87-no?authuser=0">
+
+    <py-script src="dnd.py"></py-script>
+    <div class="TOP">
+        <div class="heading">
+            <h1>DO NOT DISTURB MODE</h1>
+
+        </div>
+    </div>
+
+    <div class="timer-display-id">
+        <h1>PRESS HERE TO START DND MODE </h1>
+        <form action="/dnd" method="post">
+            <button type="submit" id="start-timer" onclick="start()">Start </button>
+        </form>
+    </div>
+    <script src="clock.js"></script>
+</body>
+
+</html>

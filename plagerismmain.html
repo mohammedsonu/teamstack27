@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PLAGIARISM</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://nicholasrossis.me/wp-content/uploads/2021/03/plagiarism.png");
+            background-repeat: no-repeat;
+            background-position: relative;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .img {
+            position: sticky;
+            text-align: center;
+            top: 0;
+        }
+
+        .card {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 20px 40px;
+            text-align: center
+        }
+
+        .card-title {
+            color: rgb(158, 28, 28);
+            padding: 30px;
+            font-weight: bold;
+            font-size: 75px;
+            grid-column: 1/-1;
+            text-align: center;
+            font-family: "Cursive", "Lucida Handwriting", sans-serif;
+        }
+
+        .card textarea {
+            width: 600px;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid rgb(202, 198, 198);
+            border-radius: 4px;
+            background-color: #ffc1f7;
+            font-size: 16px;
+            resize: none;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card textarea::placeholder {
+            font-weight: bold;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 40px 0;
+            color: #4e085f;
+            font-family: "Monospace", "Lucida Console", monospace;
+        }
+
+        .card-body input::placeholder {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 20px 0;
+            color: #4e085f;
+            font-family: "Monospace", "Lucida Console", monospace;
+        }
+
+        .card-body button {
+            padding: 0.6em 2em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .card-body button:before {
+            content: "";
+            background: linear-gradient(45deg,
+                    #ff0000,
+                    #ff7300,
+                    #fffb00,
+                    #48ff00,
+                    #00ffd5,
+                    #002bff,
+                    #7a00ff,
+                    #ff00c8,
+                    #ff0000);
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing-button-85 20s linear infinite;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        @keyframes glowing-card-body-button {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .card-body button:after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #222;
+            left: 0;
+            top: 0;
+            border-radius: 10px;
+            margin: top 20px;
+            ;
+        }
+
+        .card-body input {
+            width: 600px;
+            height: 50px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid rgb(202, 198, 198);
+            border-radius: 4px;
+            background-color: #efb4f7;
+            font-size: 16px;
+            resize: none;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-body h2 {
+            color: rgb(61, 15, 15);
+            margin-top: 15px;
+            font-size: 20px;
+            font-family: "Fantasy", "Papyrus", monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <img
+        src="https://lh3.googleusercontent.com/zJ3RTS2DauBBI-s8J_DkW_-uoy-QYPA5MbkK7V5p88KN4s82x6T4W0lVUY0OPK4HNJB8afb-E1GPZT5QdizJLf3tEd05eeqwS-uk6bMzoqsLRfnB2yQdDHdj1WNfq4V3APYxh2bdcRsqBUS2uy9eb9ISey-Jf3VCDnOmT_psH_bukhh6WFxsRlouKxPCye_zxoEBeIKeGxEZQ88vg5DZ528tS9sI3nBNP0mD6FdvkzgcvukYGOWBPyvIYyNTJwD6iNlnq8YHuEmaeuTPGW2Z-fpjdP-OoLRMD3_YDDTKArw0vNG8VrrPJTqbANxGtFU-ntOv3H8leV6n8BkLkXGKtiXng6SNW9iZszvOX3CCX6T1DbgzGfyzOQifmgHWciRByws5IFGzzJewBwcj5UYDLiOd2LcdVsytIvxZofJIqpRSe0hXwWws02rZEAeIVHxX2MlOoCRmhWF9TCvCeDrqKDTnNAK6W4lsD8kd98YwhdTYOUvjHGt_N8TjXnaSD4x4eMr53wvX8AQAxCdkbUO6Vmrsg3xGLLibNTfdg184c197UaQtYZvJO3EYFjYkDYq4roc0ZEVIAvFO1jI_zG1D2HgeqmqtqQnAEJjB9ZJvIImrHt_s3vfIU12aJsX9FuV4Lv0H1Qx5F8y9E_O3u7rdzr3aGxYSyTamXFQDe1HL9sbnr2Ht442sAnWJ0MONfjwfHXRpBniKsDc3o73yZYaKIHA-FHE4gQ-hBSVTbpeHwVzEhSUkt4O_2j2QDWU6F8q_3imTWsGm3HI2poq8o1BtvNE1cN3QBAt7eiTo6PCY8VLDe_r9FZ18r4YtDksIKpSqRVrxWDBhaFjTLwIPnlruXnMzEvvNpsoFfrG8LMCcTwS1EeScEYNLJggzjd2Eqm85SBvnX9Nb26eH8wszINksUbMCKtwBWQG2M18-Q0XTgKLLYcup51FCXlq5sD_MTdJsHl5W4uXRyZyKL5Wx6Utf8Bk6lZzL3feZs20mQWMX4AHKlz9dRtpB0Q=w1280-h87-no?authuser=0">
+    <div class="card ">
+        <form action="/compare" method="post">
+            <div class="card-title ">CHECK PLAGIARISM
+
+            </div>
+            <textarea id="box" name="COMPARE_TEXT" placeholder="ENTER DATA"></textarea>
+            <div class="card-body ">
+                <button type="submit">
+                    <h1>SUBMIT</h1>
+                </button>
+                <h2>ENTER YOUR ORIGINAL DATA IN ABOVE BLANK TO PREVENT PEOPLE TO COPY THAT DATA/INFORMATION AND ENTER
+                    BOOK NAME IN BOTTOM BLANK</h2>
+            </div>
+        </form>
+    </div>
+    <div class="card ">
+        <form action="/stored" method="post">
+            <textarea id="box" name="FILETEXT" placeholder="ENTER DATA"></textarea>
+            <div class="card-body">
+                <input type="text" name="FILENAME" placeholder="ENTER BOOK NAME">
+                <div class="" submit>
+                    <button class="flaticon-home " type="submit">
+                        <h1>SUBMIT</h1>
+                    </button>
+                    <h2>Store File</h2>
+                    <h2>ENTER YOUR ORIGINAL DATA IN ABOVE BLANK TO PREVENT PEOPLE TO COPY THAT DATA/INFORMATION AND
+                        ENTER BOOK NAME IN BOTTOM BLANK</h2>
+                </div>
+
+            </div>
+    </div>
+    </form>
+
+    </div>
+</body>
+
+</html>
