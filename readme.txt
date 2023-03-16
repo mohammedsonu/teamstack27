@@ -1,1 +1,2 @@
-TEAM STACK
+Hey there ! This project is a combination of seven modules. Six of which are software and the seventh one being a hardware project.
+The language used here is Python and obvious framework is Flask. So Download all the files of the Repo and Run the mainpage.py and you are good to go. Make sure the files are arranaged in proper folders to avoid crashes. Also for the Student Help Desk please use Apache Tom Cat Server for easy implementation.
